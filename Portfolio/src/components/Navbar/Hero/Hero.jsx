@@ -5,7 +5,7 @@ export const Hero = () => {
   <section>
    <div>
     <h1>HII</h1>
-    <p>I'm Just a girl</p>
+    <p>I'm Just a girl and im just a girl</p>
    </div>
   </section>
     
