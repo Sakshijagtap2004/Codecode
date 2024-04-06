@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utlis";
 export const Navbar = () => {
-  const [menuOpen, setMenuopen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav className={styles.navbar}>
       <a className={styles.title} href = "/">
@@ -10,17 +10,18 @@ export const Navbar = () => {
         </a>
       <div className={styles.menu}>
         <img 
-        className={styles.menubtn} 
+        className={styles.menuBtn} 
         src={
           menuOpen 
-          ? getImageUrl("nav/menuIcon.png")
-          : getImageUrl("nav/closeIcon.png")
+          ? getImageUrl("nav/closeIcon.png")
+          : getImageUrl("nav/menuIcon.png")
         } 
         alt="menu-button"
-        onClick={() => setMenuopen(!menuOpen)}
+        onClick={() => setMenuOpen(!menuOpen)}
         />
         <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
-        onClick={()=>setMenuopen(false)}>
+        onClick={()=>setMenuOpen(false)}
+        >
           <li> 
             <a href="#about">About</a>
           </li>
