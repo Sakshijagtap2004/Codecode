@@ -5,7 +5,7 @@ import { Hero } from "./components/Hero/Hero";
 function App() {//hi
  
 
-  return (//hiii
+  return (//hiii hello
     <>
     <div className={styles.App}>
    <Navbar/>
