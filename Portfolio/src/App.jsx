@@ -4,7 +4,7 @@ import { Hero } from "./components/Hero/Hero";
 function App() {//hi
  
 
-  return (// dcxvkd
+  return (// dcxvkdmledfmlsd
     <>
     <div className={styles.App}>
    <Navbar/>
