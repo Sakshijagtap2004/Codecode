@@ -1,12 +1,16 @@
 
-import styles from './App.module.css';
-import { navbar } from './components/Navbar/navbar';
+import styles from "./App.module.css";
+import { Navbar } from "./components/Navbar/Navbar";
+import { Hero } from "./components/Hero/Hero";
 function App() {
  
 
   return (
     <>
-   <navbar/>
+    <div className={styles.App}>
+   <Navbar/>
+   <Hero/>
+   </div>
     </>
   )
 }
